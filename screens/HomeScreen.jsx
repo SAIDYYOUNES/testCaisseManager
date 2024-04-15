@@ -536,7 +536,7 @@ export default function HomeScreen() {
     async function fetch() {
         try {
 
-            const { data } = await axios.get('http:localhost:3000/products');
+            const { data } = await axios.get('http:localhost:3000/products'); // Newtwork Error , j'ai utuliser statci data au lieu du json server
             setProducts(data);
         } catch (error) {
             console.log(error.message);
